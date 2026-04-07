@@ -25,9 +25,18 @@ void input()
     cout << "\n-------------------" << endl;
     cout << "Inputkan Isi Element Array" << endl;   
     cout << "-------------------" << endl;    
+
     for (int i = 0; i < n; i++)
     {
     cout << "Array index ke-" << (i + 1) << ": ";
     cin >> arr[i];
     }
 }
+
+//create function mergeSort
+void mergeSort(int low, int high)
+{
+    if (low >= high) //step 1
+    {
+        return;// step 1.a
+    }
