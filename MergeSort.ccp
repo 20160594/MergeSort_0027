@@ -42,3 +42,9 @@ void mergeSort(int low, int high)
     }
     int mid = (low + high) / 2; // step 2
     mergeSort(low, mid); // step 3
+    mergeSort(mid + 1, high); // step 4
+
+    // step 4
+    int i = low;      // step 4.a
+    int j = mid + 1;  // step 4.b
+    int k = low;      // step 4.c
